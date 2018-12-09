@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function showLogin() {
+            var loginDiv = document.getElementById("loginDiv");
+
+            loginDiv.style.display = '';
+        }
+        function hideDiv()
+        {
+            var loginDiv = document.getElementById("loginDiv");
+
+            loginDiv.style.display ='none';
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript:showLogin()">登录</a>
+    <div style="position:absolute;top:200px;left:200px;border-style:solid;border-color:saddlebrown;border-width:thin;display:none;" id="loginDiv">
+        <img src="image/guanbi.png"  onclick="hideDiv()" style="float :right " />
+       <br />
+        <table>
+            <tr>
+                <td>
+                    <label for="userName">用户名</label>
+                </td>
+                <td>
+                    <input type="text" id="uesrName" style="width:200px"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="userId">密码</label>
+                </td>
+                <td>
+                    <input type="password" id="uesrId" style="width:200px" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

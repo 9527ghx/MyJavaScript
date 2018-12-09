@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        function toggleDiv(cb) {
+            var div = document.getElementById("divL");
+            if (cb .checked) {
+                div.style.display = "";//显示
+            }
+            else {
+                div.style.display = "none";//不显示
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="checkbox"  onclick="toggleDiv(this)"/><label for="cbshow">显示高级选项</label>
+    <div  id="divL" style="display:none">这事一些高级选项</div>
+</body>
+</html>

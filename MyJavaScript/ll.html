@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        document.onmousemove = function () {
+            var x = window.event.clientX;
+            var y = window.event.clientY;
+            debugger;
+            var aa = document.getElementById("abc");
+            if (!aa) {
+                return;
+            }
+            else {
+                aa.style.top = y + "px";;
+                aa.style.left = x+"px";
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="abc" style="position:absolute">
+        <img src="hh.jpg" /><br />
+        啊啊啊
+    </div>
+</body>
+</html>

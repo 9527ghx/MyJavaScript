@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        document.onmousemove = function () {
+            var x = window.event.clientX;
+            var y = window.event.clientY;
+            var divFly = document.getElementById("divdiv");
+            if (!divFly) {
+                return;
+            }
+            divdiv.style.left = x;
+            divFly.style.top = y;
+        };
+
+    </script>
+</head>
+<body>
+    <input type="button" value="按钮" style="position:absolute;top:888px;left:888px" />
+    <div id="divdiv" style="position:absolute">
+        <img src="hh.jpg" /><br />
+        啊啊啊
+    </div>
+</body>
+</html>

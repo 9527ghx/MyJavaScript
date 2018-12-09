@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function initEvent() {
+            var rating = document.getElementById("rating");
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++) {
+                var td = tds[i];
+                td.style.cursor = "pointer";//鼠标的形状
+                td.onmouseover = function () {
+                    var rating = document.getElementById("rating");
+                    var tds = document.getElementsByTagName("td");
+                    var index = indexof(tds, this);
+                    for (var i = 0; i <= index; i++) {
+                        tds[i].innerText = "★";
+                    }
+                    for (var i = index+1; i < tds.length; i++) {
+                        tds[i].innerText = "☆";
+                    }
+                };
+            }
+        }
+
+        function indexof(arr, element) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == element)
+                    return i;
+            }
+            return -1;
+        }
+
+    </script>
+</head>
+<body onload="initEvent()">
+    <table id="rating">
+        <tr>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+        </tr>
+    </table>
+</body>
+</html>
