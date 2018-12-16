@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        //全选
+        function selAll() {
+            var playList = document.getElementById("playList");
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs[i];
+                if (input.type == "checkbox") {
+
+                    input.checked = "checked";
+                }
+            }
+        }
+
+        //全不选
+        function notSelAll() {
+            var playList = document.getElementById("playList");
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs[i];
+                if (input.type == "checkbox") {
+
+                    input.checked = "";
+                }
+            }
+        }
+
+        //反选
+        function InvertSelection() {
+            var playList = document.getElementById("playList");
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs[i];
+                if (input.type == "checkbox") {
+                    //if (input.checked == "checked" || input.checked == true) {
+                    //    input.checked = "";
+                    //}
+                    //else {
+                    //    input.checked = "checked";
+                    //}
+                    input.checked = !input.checked;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="playList">
+        <input type="checkbox" id="p1" /><label for="p1">金牛座</label>
+        <input type="checkbox" id="p2" /><label for="p2">狮子座</label>
+        <input type="checkbox" id="p3" /><label for="p3">水瓶座</label>
+        <p>
+            <input type="button" onclick="selAll()" value="全选" />
+            <input type="button" onclick="notSelAll()" value="全不选" />
+            <input type="button" onclick="InvertSelection()" value="反选" />
+        </p>
+
+
+    </div>
+</body>
+</html>

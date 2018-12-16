@@ -98,7 +98,9 @@
     <Content Include="ai.gif" />
     <Content Include="hh.jpg" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="JS\jquery-3.3.1.js" />
     <Content Include="ll.html" />
+    <Content Include="MyjQuery.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -114,6 +116,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
+    <Content Include="全选全不选反选.html" />
     <Content Include="图片.html" />
     <Content Include="层的练习.html" />
     <Content Include="评分控件.html" />
@@ -122,6 +125,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
