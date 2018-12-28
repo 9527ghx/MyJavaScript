@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../JS/jquery-3.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $("#btnAll").click(function () {
+
+                $("#playList :checkbox").attr("checked", true);
+            });
+
+            $("#btnNotAll").click(function () {
+
+                $("#playList :checkbox").attr("checked", false);
+            });
+
+            $("#btnFan").click(function () {
+
+                $("#playList :checkbox").each(function () {
+                    $(this).attr("checked", !$(this).attr("checked"))
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="playList">
+        <input type="checkbox" />歌曲1<br />
+        <input type="checkbox" />歌曲2<br />
+        <input type="checkbox" />歌曲3<br />
+        <input type="checkbox" />歌曲4<br />
+        <input type="checkbox" />歌曲5<br />
+        <input type="checkbox" />歌曲6<br />
+    </div>
+
+    <input type="button" value="全选" id="btnAll" />
+    <input type="button" value="全不选" id="btnNotAll" />
+    <input type="button" value="反选选" id="btnFan" />
+</body>
+</html>

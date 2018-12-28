@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $cr = $("#cr");
+            $cr.click(function () {
+                if ($cr.is(":checked")) {
+                    alert("已同意此条款");
+                }
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="cr" />
+    <label for="cr">我已阅读条款</label>
+</body>
+</html>
